@@ -18,9 +18,9 @@ public class RoomQuoteService {
 		this.room = room;
 	}
 
-	public double getExtrasTotal() {
+	private double getExtrasTotal() {
 
-		double extraTotal = 0;
+		double extraTotal = 0.0;
 		int occupantCount = room.getOccupancy().getOccupantCount();
 
 		List<RoomExtra> roomExtras = room.getRoomExtras();
